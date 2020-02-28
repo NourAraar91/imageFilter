@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,21 @@
 		271F382E2401149800069B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271F382C2401149800069B9D /* Main.storyboard */; };
 		271F38302401149C00069B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271F382F2401149C00069B9D /* Assets.xcassets */; };
 		271F38332401149C00069B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271F38312401149C00069B9D /* LaunchScreen.storyboard */; };
+		271F383C2401162700069B9D /* DrawingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F383B2401162700069B9D /* DrawingConfiguration.swift */; };
+		271F383E2401162E00069B9D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F383D2401162E00069B9D /* DrawingView.swift */; };
+		275CD335240815D600135303 /* CALayer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275CD334240815D600135303 /* CALayer+Ext.swift */; };
+		275CD3372408162000135303 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275CD3362408162000135303 /* UIViewController+Ext.swift */; };
+		275CD3392408164700135303 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275CD3382408164700135303 /* Image+Ext.swift */; };
+		275CD33B2408167100135303 /* Image+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275CD33A2408167100135303 /* Image+Filter.swift */; };
+		275CD33D2408203400135303 /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275CD33C2408203400135303 /* PhotoEditor.storyboard */; };
+		275CD33F2408204500135303 /* PhotoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275CD33E2408204500135303 /* PhotoEditorViewController.swift */; };
+		276F28F82406A2A000598CB9 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F28F72406A2A000598CB9 /* Shape.swift */; };
+		27AE85C8240887A7003A4601 /* Layer+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE85C7240887A7003A4601 /* Layer+UIImage.swift */; };
+		2CB0722FDDB854CC1DBBFB13 /* Pods_imageFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E28DAA36E64E8B3CC92A580 /* Pods_imageFilter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		066C8324508D641DA3ECBE0C /* Pods-imageFilter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imageFilter.debug.xcconfig"; path = "Target Support Files/Pods-imageFilter/Pods-imageFilter.debug.xcconfig"; sourceTree = "<group>"; };
 		271F38232401149800069B9D /* imageFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271F38262401149800069B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		271F38282401149800069B9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,18 @@
 		271F382F2401149C00069B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271F38322401149C00069B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271F38342401149C00069B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271F383B2401162700069B9D /* DrawingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingConfiguration.swift; sourceTree = "<group>"; };
+		271F383D2401162E00069B9D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		275CD334240815D600135303 /* CALayer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Ext.swift"; sourceTree = "<group>"; };
+		275CD3362408162000135303 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		275CD3382408164700135303 /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
+		275CD33A2408167100135303 /* Image+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Filter.swift"; sourceTree = "<group>"; };
+		275CD33C2408203400135303 /* PhotoEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoEditor.storyboard; sourceTree = "<group>"; };
+		275CD33E2408204500135303 /* PhotoEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewController.swift; sourceTree = "<group>"; };
+		276F28F72406A2A000598CB9 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		27AE85C7240887A7003A4601 /* Layer+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layer+UIImage.swift"; sourceTree = "<group>"; };
+		5E28DAA36E64E8B3CC92A580 /* Pods_imageFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imageFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5F5C897FFD97F666045977 /* Pods-imageFilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imageFilter.release.xcconfig"; path = "Target Support Files/Pods-imageFilter/Pods-imageFilter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB0722FDDB854CC1DBBFB13 /* Pods_imageFilter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +67,8 @@
 			children = (
 				271F38252401149800069B9D /* imageFilter */,
 				271F38242401149800069B9D /* Products */,
+				8C4DE54AF0C0175535387B61 /* Pods */,
+				B3ABACA26E01AB438049BDE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +83,66 @@
 		271F38252401149800069B9D /* imageFilter */ = {
 			isa = PBXGroup;
 			children = (
+				275CD333240815C300135303 /* Extensions */,
+				271F383A2401161100069B9D /* Drawer */,
+				275CD3402408204B00135303 /* ViewControllers */,
 				271F38262401149800069B9D /* AppDelegate.swift */,
 				271F38282401149800069B9D /* SceneDelegate.swift */,
-				271F382A2401149800069B9D /* ViewController.swift */,
 				271F382C2401149800069B9D /* Main.storyboard */,
 				271F382F2401149C00069B9D /* Assets.xcassets */,
 				271F38312401149C00069B9D /* LaunchScreen.storyboard */,
 				271F38342401149C00069B9D /* Info.plist */,
 			);
 			path = imageFilter;
+			sourceTree = "<group>";
+		};
+		271F383A2401161100069B9D /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				271F383B2401162700069B9D /* DrawingConfiguration.swift */,
+				271F383D2401162E00069B9D /* DrawingView.swift */,
+				276F28F72406A2A000598CB9 /* Shape.swift */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		275CD333240815C300135303 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				275CD334240815D600135303 /* CALayer+Ext.swift */,
+				275CD3362408162000135303 /* UIViewController+Ext.swift */,
+				275CD3382408164700135303 /* Image+Ext.swift */,
+				275CD33A2408167100135303 /* Image+Filter.swift */,
+				27AE85C7240887A7003A4601 /* Layer+UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		275CD3402408204B00135303 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				271F382A2401149800069B9D /* ViewController.swift */,
+				275CD33C2408203400135303 /* PhotoEditor.storyboard */,
+				275CD33E2408204500135303 /* PhotoEditorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C4DE54AF0C0175535387B61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				066C8324508D641DA3ECBE0C /* Pods-imageFilter.debug.xcconfig */,
+				8D5F5C897FFD97F666045977 /* Pods-imageFilter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3ABACA26E01AB438049BDE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E28DAA36E64E8B3CC92A580 /* Pods_imageFilter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 271F38372401149C00069B9D /* Build configuration list for PBXNativeTarget "imageFilter" */;
 			buildPhases = (
+				72211780B2E79B852FCD5BE1 /* [CP] Check Pods Manifest.lock */,
 				271F381F2401149800069B9D /* Sources */,
 				271F38202401149800069B9D /* Frameworks */,
 				271F38212401149800069B9D /* Resources */,
+				D8B1B089E05910943E3C5208 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +207,71 @@
 			files = (
 				271F38332401149C00069B9D /* LaunchScreen.storyboard in Resources */,
 				271F38302401149C00069B9D /* Assets.xcassets in Resources */,
+				275CD33D2408203400135303 /* PhotoEditor.storyboard in Resources */,
 				271F382E2401149800069B9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72211780B2E79B852FCD5BE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-imageFilter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B1B089E05910943E3C5208 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-imageFilter/Pods-imageFilter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-imageFilter/Pods-imageFilter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-imageFilter/Pods-imageFilter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		271F381F2401149800069B9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275CD335240815D600135303 /* CALayer+Ext.swift in Sources */,
+				275CD33B2408167100135303 /* Image+Filter.swift in Sources */,
+				271F383C2401162700069B9D /* DrawingConfiguration.swift in Sources */,
+				27AE85C8240887A7003A4601 /* Layer+UIImage.swift in Sources */,
+				275CD3392408164700135303 /* Image+Ext.swift in Sources */,
+				276F28F82406A2A000598CB9 /* Shape.swift in Sources */,
+				271F383E2401162E00069B9D /* DrawingView.swift in Sources */,
 				271F382B2401149800069B9D /* ViewController.swift in Sources */,
+				275CD33F2408204500135303 /* PhotoEditorViewController.swift in Sources */,
 				271F38272401149800069B9D /* AppDelegate.swift in Sources */,
+				275CD3372408162000135303 /* UIViewController+Ext.swift in Sources */,
 				271F38292401149800069B9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +414,11 @@
 		};
 		271F38382401149C00069B9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066C8324508D641DA3ECBE0C /* Pods-imageFilter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RXEQF54W6W;
+				DEVELOPMENT_TEAM = M6V77JHHPP;
 				INFOPLIST_FILE = imageFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +433,11 @@
 		};
 		271F38392401149C00069B9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5F5C897FFD97F666045977 /* Pods-imageFilter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RXEQF54W6W;
+				DEVELOPMENT_TEAM = M6V77JHHPP;
 				INFOPLIST_FILE = imageFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
